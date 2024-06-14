@@ -2,7 +2,9 @@ name: Fetch API Data Daily
 
 on:
   schedule:
-    - cron: '10 13 * * 1-5'  # Runs every day at 6am
+    - cron: '10 13 * * 1-5'  # UTC TIMEZONE - want to run every weekday at 6am EST 
+  workflow_dispatch:  # Allows manual triggering
+
 
 jobs:
   fetch-data:
