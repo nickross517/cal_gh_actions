@@ -2,7 +2,7 @@ name: Fetch API Data Daily
 
 on:
   schedule:
-    - cron: '10 13 * * 1-5'  # UTC TIMEZONE - want to run every weekday at 6am EST 
+    - cron: '0 10 * * 1-5'  # UTC TIMEZONE - want to run every weekday at 6am EST 
   workflow_dispatch:  # Allows manual triggering
 
 
@@ -33,6 +33,7 @@ jobs:
           git config --global user.email 'github-actions@github.com'
           git add ./data/calendar_data.jl
           git add ./data/finance.db
+          git add ./logs/.
           git commit -m 'Updated jl and db files'
           git push
         env:
