@@ -26,6 +26,9 @@ jobs:
 
       - name: Run script
         run: python get_data.py
+      
+      - name: Run script2
+        run: python transform_data.py
 
       - name: Commit and push data
         run: |
