@@ -28,3 +28,5 @@
 2024-07-03 10:08:45,780 - INFO - Wrote to file at 2024-07-03 10:08:45.780517
 2024-07-04 10:08:08,573 - INFO - Successful request to https://api.nasdaq.com/api/calendar/earnings at 2024-07-04 10:08:08.573902
 2024-07-04 10:08:08,574 - INFO - Wrote to file at 2024-07-04 10:08:08.574125
+2024-07-05 10:08:43,316 - INFO - Successful request to https://api.nasdaq.com/api/calendar/earnings at 2024-07-05 10:08:43.316489
+2024-07-05 10:08:43,316 - INFO - Wrote to file at 2024-07-05 10:08:43.316753
