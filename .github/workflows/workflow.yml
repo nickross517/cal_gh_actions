@@ -30,11 +30,15 @@ jobs:
       - name: Run script2
         run: python transform_data.py
 
+      - name: Run script3
+        run: python transform_ipos.py
+
       - name: Commit and push data
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add ./data/calendar_data.jl
+          git add ./data/ipo_data.jl
           git add ./data/finance.db
           git add ./logs/.
           git commit -m 'Updated jl and db files'

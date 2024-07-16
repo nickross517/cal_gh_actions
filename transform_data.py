@@ -1,15 +1,15 @@
 import json 
 import pandas as pd
-import numpy as np
 import sqlite3
 import logging
 from datetime import datetime 
+from funcs import currency_convert
 
 
 file = './data/calendar_data.jl'
 log_path = './logs/transformation_logs.log'
 logging.basicConfig(filename=log_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-logging.info('Started transformations')
+logging.info('Started transformations for calendar data')
 
 data=[]
 with open(file) as f:
@@ -31,14 +31,6 @@ result.columns = new_col_names
 result = result.drop_duplicates()
 result['last_yr_rpt_date'] = pd.to_datetime(result['last_yr_rpt_date'], errors='coerce')
 result['created_date'] = pd.to_datetime(result['created_date'], format='%a, %b %d, %Y')
-
-def currency_convert(col):
-    col = col.replace('N/A', np.nan)
-    col = col.replace('[\$,)]', '', regex=True)
-    col = col.replace('\(', '-', regex=True)
-    col = col.replace('',np.nan)
-    col = col.astype(float)
-    return col
 
 result['last_yr_eps'] = currency_convert(result['last_yr_eps'])
 result['market_cap'] = currency_convert(result['market_cap'])
