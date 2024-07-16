@@ -3,10 +3,12 @@ import json
 import logging
 from datetime import datetime
 
-data_path = './data/calendar_data.jl'
 log_path = './logs/extract_logs.log'
 logging.basicConfig(filename=log_path, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-url = 'https://api.nasdaq.com/api/calendar/earnings'
+urls = [
+{'url':'https://api.nasdaq.com/api/calendar/earnings','path':'calendar'}, 
+{'url':'https://api.nasdaq.com/api/ipo/calendar','path':'ipo'}
+]
 
 headers = {
     'authority': 'api.nasdaq.com',
@@ -15,7 +17,8 @@ headers = {
     'cache-control': 'max-age=0',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
 }
-def get_data():
+def get_data(url, path_info):
+    data_path = f'./data/{path_info}_data.jl'
     try:
         r = requests.get(url,headers=headers)
         r.raise_for_status()
@@ -30,4 +33,5 @@ def get_data():
         logging.error(f'Unspecified error {str(e)}')
 
 if __name__ == '__main__':
-    get_data()
+    for url in urls:
+        get_data(url['url'], path_info=url['path'])
