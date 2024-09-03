@@ -180,3 +180,7 @@
 2024-09-02 10:09:03,420 - INFO - Wrote to file at 2024-09-02 10:09:03.420656
 2024-09-02 10:09:03,441 - INFO - Successful request to https://api.nasdaq.com/api/ipo/calendar at 2024-09-02 10:09:03.441129
 2024-09-02 10:09:03,441 - INFO - Wrote to file at 2024-09-02 10:09:03.441313
+2024-09-03 10:08:44,716 - INFO - Successful request to https://api.nasdaq.com/api/calendar/earnings at 2024-09-03 10:08:44.716891
+2024-09-03 10:08:44,717 - INFO - Wrote to file at 2024-09-03 10:08:44.717097
+2024-09-03 10:08:44,737 - INFO - Successful request to https://api.nasdaq.com/api/ipo/calendar at 2024-09-03 10:08:44.737173
+2024-09-03 10:08:44,737 - INFO - Wrote to file at 2024-09-03 10:08:44.737307
