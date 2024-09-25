@@ -314,3 +314,8 @@
 2024-09-24 10:09:11,208 - INFO - Starting upload to db
 2024-09-24 10:09:11,560 - INFO - Started transformations for IPO data
 2024-09-24 10:09:11,709 - INFO - Finished transformations, starting ipo upload to db
+2024-09-25 10:10:07,116 - INFO - Started transformations for calendar data
+2024-09-25 10:10:07,273 - INFO - Transformations successful
+2024-09-25 10:10:07,273 - INFO - Starting upload to db
+2024-09-25 10:10:07,653 - INFO - Started transformations for IPO data
+2024-09-25 10:10:07,819 - INFO - Finished transformations, starting ipo upload to db
