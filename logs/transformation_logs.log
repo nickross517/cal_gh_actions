@@ -923,3 +923,8 @@
 2025-03-06 10:09:59,286 - INFO - Starting upload to db
 2025-03-06 10:09:59,634 - INFO - Started transformations for IPO data
 2025-03-06 10:10:00,119 - INFO - Finished transformations, starting ipo upload to db
+2025-03-07 10:09:51,466 - INFO - Started transformations for calendar data
+2025-03-07 10:09:51,932 - INFO - Transformations successful
+2025-03-07 10:09:51,932 - INFO - Starting upload to db
+2025-03-07 10:09:52,279 - INFO - Started transformations for IPO data
+2025-03-07 10:09:52,770 - INFO - Finished transformations, starting ipo upload to db
