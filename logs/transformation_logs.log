@@ -1588,3 +1588,9 @@
 2025-09-02 10:11:19,441 - INFO - Started transformations for IPO data
 2025-09-02 10:11:20,335 - INFO - Finished transformations, starting ipo upload to db
 2025-09-02 10:11:20,338 - INFO - No new ipo records uploaded
+2025-09-03 10:09:55,333 - INFO - Started transformations for calendar data
+2025-09-03 10:09:56,240 - INFO - Transformations successful
+2025-09-03 10:09:56,240 - INFO - Starting upload to db
+2025-09-03 10:09:56,598 - INFO - Started transformations for IPO data
+2025-09-03 10:09:57,492 - INFO - Finished transformations, starting ipo upload to db
+2025-09-03 10:09:57,494 - INFO - No new ipo records uploaded
